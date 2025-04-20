@@ -1,0 +1,11 @@
+# Ignore the virtual environment
+venv/
+
+
+# Env files
+.env
+
+research_output.txt
+
+
+__pycache__/
