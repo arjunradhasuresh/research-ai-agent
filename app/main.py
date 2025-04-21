@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.api.v1.endpoints import health_check,research
+from app.api.v1.endpoints import health_check,research,summarization_pdf
 
 app = FastAPI(
     title="AI AGENT",
@@ -9,4 +9,5 @@ app = FastAPI(
 
 app.include_router(health_check.router)
 app.include_router(research.router)
+app.include_router(summarization_pdf.router)
 
